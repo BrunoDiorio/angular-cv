@@ -1,0 +1,19 @@
+.toolbar {
+  padding-top: 1rem;
+}
+
+.toolbar-row {
+  height: auto;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}

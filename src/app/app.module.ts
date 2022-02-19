@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexModule } from './index/index.module';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { IndexModule } from './index/index.module';
     BrowserAnimationsModule,
     HttpClientModule,
     IndexModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

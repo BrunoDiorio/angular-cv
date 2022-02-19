@@ -1,0 +1,37 @@
+{
+  "header": {
+    "title": "Bruno Diorio Andrade Affonso",
+    "subtitle": "Java Dev"
+  },
+  "description": "Profissional atuando na área de TI a mais de <b>10 anos</b> com experiência nos campos de infraestrutura, redes e desenvolvimento. Apto a atuar no <b>desenvolvimento de projetos</b> contribuindo com as diretrizes de arquitetura, levantamento de requisitos, implementação e desenvolvimento das soluções adequadas às necessidades do projeto.",
+  "experiences": [
+    {
+      "title": "Desenvolvedor Java Senior",
+      "subtitle": "FinTech RecargaPay Instituição de Pagamentos LTDA",
+      "projects": [
+        {
+          "title": "App RecargaPay",
+          "description": "Implementação de novas funcionalidade, Melhoria contínua do backend. Desenvolvimento de soluções focadas em microserviços",
+          "stacks": "Java 11, Spring Boot, JPA, PostgreSQL, AWS, Gradle, Maven, Redis, RabbitMQ."
+        }
+      ]
+    }
+  ],
+  "personalData": {
+    "address": "Gamboa, RJ 20220-470",
+    "dob": "29/07/1987",
+    "celphone": "(21) xxx.xxx.371",
+    "email": "bruno.affonso@live.com",
+    "linkedIn": "https://www.linkedin.com/in/brunodiorio/"
+  },
+  "skills": [
+    {
+      "title": "Linguagens",
+      "items": ["Java", "JavaScript"]
+    },
+    {
+      "title": "Frameworks",
+      "items": ["jQuery", "Spring", "JPA"]
+    }
+  ]
+}

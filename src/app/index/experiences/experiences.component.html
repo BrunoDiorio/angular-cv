@@ -1,0 +1,28 @@
+
+<mat-divider></mat-divider>
+<div *ngFor="let experience of experiences.data">
+  <div>
+    <div>{{ experience.period }}</div>
+    <div>{{ experience.title }}</div>
+    <div>{{ experience.subtitle }}</div>
+  </div>
+  <div *ngFor="let project of experience.projects">
+    <div>{{ project.title }}</div>
+    <div>{{ project.description }}</div>
+    <div>{{ project.stacks }}</div>
+  </div>
+</div>
+
+<mat-list>
+  <div mat-subheader>{{ experiences.title }}</div>
+  <mat-list-item *ngFor="let experience of experiences.data">
+    <div mat-line>{{ experience.period }}</div>
+    <div mat-line>{{ experience.title }}</div>
+    <div mat-line>{{ experience.subtitle }}</div>
+    <mat-list-item *ngFor="let project of experience.projects">
+      <div mat-line>{{ project.title }}</div>
+      <div mat-line>{{ project.description }}</div>
+      <div mat-line>{{ project.stacks }}</div>
+    </mat-list-item>
+  </mat-list-item>
+</mat-list>

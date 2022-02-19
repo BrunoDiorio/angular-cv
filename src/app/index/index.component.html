@@ -1,0 +1,7 @@
+<mat-card class="shadow">
+  <div *ngIf="content$ | async as content;">
+    <app-toolbar [header]="content.header "></app-toolbar>
+    <app-description [description]="content.description"></app-description>
+    <app-experiences [experiences]="content.experiences"></app-experiences>
+  </div>
+</mat-card>
