@@ -1,7 +1,11 @@
-<mat-card class="shadow">
-  <div *ngIf="content$ | async as content;">
-    <app-toolbar [header]="content.header "></app-toolbar>
-    <app-description [description]="content.description"></app-description>
-    <app-experiences [experiences]="content.experiences"></app-experiences>
+<div class="container-fluid mb-5">
+  <div class="row justify-content-center d-print-inline">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 m-3 shadow-lg d-print-inline">
+      <div *ngIf="content$ | async as content;">
+        <app-toolbar [header]="content.header "></app-toolbar>
+        <app-description [description]="content.description"></app-description>
+        <app-experiences [experiences]="content.experiences"></app-experiences>
+      </div>
+    </div>
   </div>
-</mat-card>
+</div>
