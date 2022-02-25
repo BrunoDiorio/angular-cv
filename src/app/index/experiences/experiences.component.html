@@ -25,21 +25,24 @@
           {{ experience.subtitle }}
         </div>
 
-        <div class="col-12 pt-2" *ngFor="let project of experience.projects">
-          <h6>{{ project.title }}</h6>
+        <div class="col-12 pt-2" *ngIf="experience.responsabilities as responsabilities">
+
+          <h6>{{ responsabilities.title }}</h6>
           <ul class="list-group">
             <li class="list-group-item border-0 text-justify">
-              <div *ngFor="let description of project.descriptions">{{ description }}</div>
-            </li>
-            <li class="list-group-item border-0 text-justify mb-3">
-              <h6 class="d-inline">Tecnologias Usadas:</h6> {{ project.stacks }}
+              <div *ngFor="let responsability of responsabilities.list">{{ responsability }}</div>
             </li>
           </ul>
         </div>
+
         <div class="col-12 pt-2">
           <div *ngIf="experience.achivment as achivment">
-            <h6 class="d-inline">{{ achivment.title }}:</h6>
-            <div *ngFor="let achivment of achivment.descriptions">{{ achivment }}</div>
+            <h6>{{ achivment.title }}:</h6>
+            <ul class="list-group">
+              <li class="list-group-item border-0 text-justify" *ngFor="let achivment of achivment.list">
+                {{ achivment }}
+              </li>
+            </ul>
           </div>
         </div>
       </div>

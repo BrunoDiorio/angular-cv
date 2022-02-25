@@ -12,22 +12,19 @@
         "subtitle": "RecargaPay Instituição de Pagamentos LTDA",
         "period": "03/2020 à Presente Data",
         "fullPeriod": null,
-        "projects": [
-          {
-            "title": "RecargaPay",
-            "descriptions": [
-              "Analisar e definir alterações visando definições da sprint",
-              "Realizar alterações técnicas relevantes a especificações",
-              "Planejamento e desenvolvimento de testes para garantir que as alterações de código atendam aos requisitos e especificações",
-              "Realizar o deploy e acompanhar os impactos pós-implementação das alterações realizadas",
-              "Implementação de novas funcionalidade, melhoria contínua do backend. Desenvolvimento de soluções focadas em microserviços"
-            ],
-            "stacks": "Java 11, Spring Boot, JPA, PostgreSQL, AWS, Gradle, Maven, Redis, RabbitMQ."
-          }
-        ],
+        "responsabilities": {
+          "title": "Responsabilidades",
+          "list": [
+            "Analisar e definir alterações visando definições da sprint",
+            "Realizar alterações técnicas relevantes a especificações",
+            "Planejamento e desenvolvimento de testes para garantir que as alterações de código atendam aos requisitos e especificações",
+            "Realizar o deploy e acompanhar os impactos pós-implementação das alterações realizadas",
+            "Implementação de novas funcionalidade, melhoria contínua do backend. Desenvolvimento de soluções focadas em microserviços"
+          ]
+        },
         "achivment": {
           "title": "Principais realizações",
-          "descriptions": [
+          "list": [
             "Generalizar tratemento de erro a nível de aplicação",
             "Criação de página de administração para gerenciar recursos que antes eram geridos via hard code",
             "Implementação de mensageria para envio de notificações push"
@@ -39,21 +36,18 @@
         "subtitle": "MJV Innovation and Technology",
         "period": "04/2018 à 02/2020",
         "fullPeriod": "1 ano e 10 meses",
-        "projects": [
-          {
-            "title": "Projeto PCBS-Novamed",
-            "descriptions": [
-              "Melhoria de código implementado por outra consultoria",
-              "Implementação de novo fluxo de agendamento para clientes do plano de saude",
-              "Levantamento de requisitos com o cliente",
-              "Planejamento das sprints"
-              ],
-            "stacks": "Java 11, Spring Boot, JPA, PostgreSQL, AWS, Gradle, Maven, Redis, RabbitMQ."
-          }
-        ],
+        "responsabilities": {
+          "title": "Responsabilidades",
+          "list": [
+            "Melhoria de código implementado por outra consultoria",
+            "Implementação de novo fluxo de agendamento para clientes do plano de saude",
+            "Levantamento de requisitos com o cliente",
+            "Planejamento das sprints"
+            ]
+        },
         "achivment": {
           "title": "Principais realizações",
-          "descriptions": [
+          "list": [
             "Generalizar tratemento de erro a nível de aplicação",
             "Criação de página de administração para gerenciar recursos que antes eram geridos via hard code",
             "Implementação de mensageria para envio de notificações push"

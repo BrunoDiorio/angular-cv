@@ -4,7 +4,7 @@ export interface Content {
   experiences: Experience;
   personalData: PersonalData;
   formation: Formation;
-  skills: Skill[];
+  skills: Section[];
 }
 
 export interface Header {
@@ -22,19 +22,8 @@ export interface ExperienceData {
   subtitle: string;
   period: string;
   fullPeriod: string;
-  projects: Project[];
-  achivment: Achivment;
-}
-
-export interface Project {
-  title: string;
-  descriptions: string[];
-  stacks: string;
-}
-
-export interface Achivment {
-  title: string;
-  descriptions: string[];
+  responsabilities: Section;
+  achivment: Section;
 }
 
 export interface PersonalData {
@@ -57,8 +46,8 @@ export interface FormationData {
   teachingEntity: string
 }
 
-export interface Skill {
+export interface Section {
   title: string;
-  items: string[];
+  subtitle: string;
+  list: string[];
 }
-
