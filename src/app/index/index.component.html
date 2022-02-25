@@ -1,10 +1,16 @@
 <div class="container-fluid mb-5">
   <div class="row justify-content-center d-print-inline">
     <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 m-3 shadow-lg d-print-inline">
-      <div *ngIf="content$ | async as content;">
+      <div *ngIf="content$ | async as content;" class="row text-muted">
         <app-toolbar [header]="content.header "></app-toolbar>
-        <app-description [description]="content.description"></app-description>
-        <app-experiences [experiences]="content.experiences"></app-experiences>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-7 pt-4">
+          <app-description [description]="content.description"></app-description>
+          <app-experiences [experiences]="content.experiences" [language]="language"></app-experiences>
+          <app-formation [formation]="content.formation"></app-formation>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-5 bg-light pb-5">
+          <app-personal-data [personalData]="content.personalData"></app-personal-data>
+        </div>
       </div>
     </div>
   </div>

@@ -10,36 +10,55 @@
       {
         "title": "Desenvolvedor Java Senior",
         "subtitle": "RecargaPay Instituição de Pagamentos LTDA",
-        "period": "2018-04 à Presente Data",
+        "period": "03/2020 à Presente Data",
         "fullPeriod": null,
         "projects": [
           {
-            "title": "RecargaPay",8
+            "title": "RecargaPay",
             "descriptions": [
               "Analisar e definir alterações visando definições da sprint",
               "Realizar alterações técnicas relevantes a especificações",
               "Planejamento e desenvolvimento de testes para garantir que as alterações de código atendam aos requisitos e especificações",
               "Realizar o deploy e acompanhar os impactos pós-implementação das alterações realizadas",
-              "Implementação de novas funcionalidade, Melhoria contínua do backend. Desenvolvimento de soluções focadas em microserviços"
+              "Implementação de novas funcionalidade, melhoria contínua do backend. Desenvolvimento de soluções focadas em microserviços"
             ],
             "stacks": "Java 11, Spring Boot, JPA, PostgreSQL, AWS, Gradle, Maven, Redis, RabbitMQ."
           }
-        ]
+        ],
+        "achivment": {
+          "title": "Principais realizações",
+          "descriptions": [
+            "Generalizar tratemento de erro a nível de aplicação",
+            "Criação de página de administração para gerenciar recursos que antes eram geridos via hard code",
+            "Implementação de mensageria para envio de notificações push"
+          ]
+        }
       },
       {
-        "title": "Desenvolvedor Java Senior",
-        "subtitle": "RecargaPay Instituição de Pagamentos LTDA",
-        "period": "2018-04 à Presente Data",
+        "title": "Desenvolvedor Java Pleno",
+        "subtitle": "MJV Innovation and Technology",
+        "period": "04/2018 à 02/2020",
         "fullPeriod": "1 ano e 10 meses",
         "projects": [
           {
-            "title": "RecargaPay",
+            "title": "Projeto PCBS-Novamed",
             "descriptions": [
-              "Implementação de novas funcionalidade, Melhoria contínua do backend. Desenvolvimento de soluções focadas em microserviços"
-            ],
+              "Melhoria de código implementado por outra consultoria",
+              "Implementação de novo fluxo de agendamento para clientes do plano de saude",
+              "Levantamento de requisitos com o cliente",
+              "Planejamento das sprints"
+              ],
             "stacks": "Java 11, Spring Boot, JPA, PostgreSQL, AWS, Gradle, Maven, Redis, RabbitMQ."
           }
-        ]
+        ],
+        "achivment": {
+          "title": "Principais realizações",
+          "descriptions": [
+            "Generalizar tratemento de erro a nível de aplicação",
+            "Criação de página de administração para gerenciar recursos que antes eram geridos via hard code",
+            "Implementação de mensageria para envio de notificações push"
+          ]
+        }
       }
     ]
   },
@@ -58,6 +77,21 @@
         "date":"2004",
         "description": "Ensino médio",
         "teachingEntity": "Rede MV1"
+      },
+      {
+        "date":"2013",
+        "description": "Técnico em Informática",
+        "teachingEntity": "Senai"
+      },
+      {
+        "date":"2014",
+        "description": "Java Web Developer",
+        "teachingEntity": "COTI informática"
+      },
+      {
+        "date":"2018",
+        "description": "Bacharel em Engenharia da Computação",
+        "teachingEntity": "UVA"
       }
     ]
   },

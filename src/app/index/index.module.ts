@@ -10,6 +10,8 @@ import { ExperiencesComponent } from './experiences/experiences.component';
 import { IndexRoutingModule } from './index-routing.module';
 import { IndexComponent } from './index.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { FormationComponent } from './formation/formation.component';
+import { PersonalDataComponent } from './personal-data/personal-data.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     DescriptionComponent,
     ToolbarComponent,
     IndexComponent,
-    ExperiencesComponent
+    ExperiencesComponent,
+    FormationComponent,
+    PersonalDataComponent
   ],
   imports: [
     CommonModule,

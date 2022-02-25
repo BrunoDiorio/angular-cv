@@ -1,15 +1,48 @@
 
-<mat-divider></mat-divider>
-<div *ngFor="let experience of experiences.data">
-  <div>
-    <div>{{ experience.period }}</div>
-    <div>{{ experience.fullPeriod }}</div>
-    <div>{{ experience.title }}</div>
-    <div>{{ experience.subtitle }}</div>
+<section>
+  <div class="row">
+    <div class="col-12 mt-3">
+      <h4>{{ experiences.title }}</h4>
+      <mat-divider></mat-divider>
+    </div>
   </div>
-  <div *ngFor="let project of experience.projects">
-    <div>{{ project.title }}</div>
-    <div *ngFor="let description of project.descriptions">{{ description }}</div>
-    <div>{{ project.stacks }}</div>
+
+  <div *ngFor="let experience of experiences.data; index as i" class="row mb-5">
+    <div class="col-2">
+      {{ experience.period }}
+      <div class="font-italic">
+        <div *ngIf="i == 0; else elseBlock">
+          ({{ formatedDiffDate }})
+        </div>
+        <ng-template ng-template #elseBlock>({{ experience.fullPeriod }})</ng-template></div>
+    </div>
+    <div class="col-10">
+      <div class="row">
+        <div class="col-12 fw-bolder lead">
+          {{ experience.title }}
+        </div>
+        <div class="col-12 fst-italic">
+          {{ experience.subtitle }}
+        </div>
+
+        <div class="col-12 pt-2" *ngFor="let project of experience.projects">
+          <h6>{{ project.title }}</h6>
+          <ul class="list-group">
+            <li class="list-group-item border-0 text-justify">
+              <div *ngFor="let description of project.descriptions">{{ description }}</div>
+            </li>
+            <li class="list-group-item border-0 text-justify mb-3">
+              <h6 class="d-inline">Tecnologias Usadas:</h6> {{ project.stacks }}
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 pt-2">
+          <div *ngIf="experience.achivment as achivment">
+            <h6 class="d-inline">{{ achivment.title }}:</h6>
+            <div *ngFor="let achivment of achivment.descriptions">{{ achivment }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>

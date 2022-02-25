@@ -12,7 +12,7 @@ import { DataService } from './services/data.service';
 export class IndexComponent implements OnInit {
 
   content$: Observable<Content> | undefined;
-  language: string = '';
+  language: string = 'pt';
 
   constructor(private dataService: DataService,
               private route: ActivatedRoute) {

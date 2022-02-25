@@ -1,0 +1,14 @@
+<section class="pb-5">
+  <div class="row">
+    <h4>{{ formation.title }}</h4>
+    <mat-divider></mat-divider>
+    <div class="row mb-3" *ngFor="let data of formation.data">
+      <div class="col-2">
+        {{ data.date }}
+      </div>
+      <div class="col-10">
+        {{ data.description }}, <div class="fst-italic d-inline">{{ data.teachingEntity }}</div>
+      </div>
+    </div>
+  </div>
+</section>

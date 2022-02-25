@@ -3,7 +3,7 @@ export interface Content {
   description: string;
   experiences: Experience;
   personalData: PersonalData;
-  formation: formation;
+  formation: Formation;
   skills: Skill[];
 }
 
@@ -23,12 +23,18 @@ export interface ExperienceData {
   period: string;
   fullPeriod: string;
   projects: Project[];
+  achivment: Achivment;
 }
 
 export interface Project {
   title: string;
   descriptions: string[];
   stacks: string;
+}
+
+export interface Achivment {
+  title: string;
+  descriptions: string[];
 }
 
 export interface PersonalData {
@@ -40,7 +46,7 @@ export interface PersonalData {
   linkedIn: string;
 }
 
-export interface formation {
+export interface Formation {
   title: string;
   data: FormationData[];
 }
