@@ -12,6 +12,7 @@ import { IndexComponent } from './index.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { FormationComponent } from './formation/formation.component';
 import { PersonalDataComponent } from './personal-data/personal-data.component';
+import { SkillsComponent } from './skills/skills.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { PersonalDataComponent } from './personal-data/personal-data.component';
     IndexComponent,
     ExperiencesComponent,
     FormationComponent,
-    PersonalDataComponent
+    PersonalDataComponent,
+    SkillsComponent
   ],
   imports: [
     CommonModule,

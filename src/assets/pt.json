@@ -11,7 +11,7 @@
         "title": "Desenvolvedor Java Senior",
         "subtitle": "RecargaPay Instituição de Pagamentos LTDA",
         "period": "03/2020 à Presente Data",
-        "fullPeriod": null,
+        "currentJobStartDate": "2020-03-01",
         "responsabilities": {
           "title": "Responsabilidades",
           "list": [
@@ -58,11 +58,26 @@
   },
   "personalData": {
     "title": "Dados Pessoais",
-    "address": "Gamboa, RJ 20220-470",
-    "dob": "29/07/1987",
-    "celphone": "(21) xxx.xxx.371",
-    "email": "bruno.affonso@live.com",
-    "linkedIn": "https://www.linkedin.com/in/brunodiorio/"
+    "address": {
+      "title": "Endereço",
+      "value": "Gamboa, RJ 20220-470"
+    },
+    "dob": {
+      "title": "Nascimento",
+      "value": "29/07/1987"
+    },
+    "email": {
+      "title": "E-mail",
+      "value": "bruno.affonso@live.com"
+    },
+    "linkedIn": {
+      "title": "LinkedIn",
+      "value": "linkedin.com/in/brunodiorio"
+    },
+    "github": {
+      "title": "Github",
+      "value": "github.com/DiorioBruno"
+    }
   },
   "formation":{
     "title": "Formação",
@@ -92,11 +107,23 @@
   "skills": [
     {
       "title": "Linguagens",
-      "items": ["Java", "JavaScript"]
+      "list": ["Java", "JavaScript", "Typescript", "Python", "Sql", "HTML", "CSS"]
     },
     {
       "title": "Frameworks",
-      "items": ["jQuery", "Spring", "JPA"]
+      "list": ["Spring", "JPA", "jUnit", "Mockito", "JSF", "JSP", "Struts", "Maven"]
+    },
+    {
+      "title": "Ops",
+      "list": ["Aws", "Jenkins", "Tomcat", "Jboss", "Websphere", "Liberty", "PostgreSQL", "MySql", "Redis", "Oracle", "Sql Server", "DB2"]
+    },
+    {
+      "title": "Versionamento",
+      "list": ["Git", "Svn"]
+    },
+    {
+      "title": "Gestão",
+      "list": ["Redmine", "Asana", "Trello", "Wrike", "Kanban", "Scrum"]
     }
   ]
 }

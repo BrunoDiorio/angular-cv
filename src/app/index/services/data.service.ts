@@ -15,7 +15,7 @@ export class DataService {
   constructor(private httpClient: HttpClient) { }
 
   get(language: string): Observable<Content> {
-    return this.httpClient.get<Content>('assets/mock_'+language+'.json')
+    return this.httpClient.get<Content>('/assets/'+language+'.json')
     .pipe(
       first()
     );

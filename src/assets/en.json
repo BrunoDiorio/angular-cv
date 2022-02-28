@@ -1,7 +1,7 @@
 {
   "header": {
     "title": "Bruno Diorio Andrade Affonso",
-    "subtitle": "Desenvolvedor Java"
+    "subtitle": "Java Developer"
   },
   "description": "Profissional atuando na área de TI a mais de <b>10 anos</b> com experiência nos campos de infraestrutura, redes e desenvolvimento. Apto a atuar no <b>desenvolvimento de projetos</b> contribuindo com as diretrizes de arquitetura, levantamento de requisitos, implementação e desenvolvimento das soluções adequadas às necessidades do projeto.",
   "experiences": {
@@ -11,23 +11,20 @@
         "title": "Desenvolvedor Java Senior",
         "subtitle": "RecargaPay Instituição de Pagamentos LTDA",
         "period": "03/2020 à Presente Data",
-        "fullPeriod": null,
-        "projects": [
-          {
-            "title": "RecargaPay",
-            "descriptions": [
-              "Analisar e definir alterações visando definições da sprint",
-              "Realizar alterações técnicas relevantes a especificações",
-              "Planejamento e desenvolvimento de testes para garantir que as alterações de código atendam aos requisitos e especificações",
-              "Realizar o deploy e acompanhar os impactos pós-implementação das alterações realizadas",
-              "Implementação de novas funcionalidade, melhoria contínua do backend. Desenvolvimento de soluções focadas em microserviços"
-            ],
-            "stacks": "Java 11, Spring Boot, JPA, PostgreSQL, AWS, Gradle, Maven, Redis, RabbitMQ."
-          }
-        ],
+        "currentJobStartDate": "2020-03-01",
+        "responsabilities": {
+          "title": "Responsabilidades",
+          "list": [
+            "Analisar e definir alterações visando definições da sprint",
+            "Realizar alterações técnicas relevantes a especificações",
+            "Planejamento e desenvolvimento de testes para garantir que as alterações de código atendam aos requisitos e especificações",
+            "Realizar o deploy e acompanhar os impactos pós-implementação das alterações realizadas",
+            "Implementação de novas funcionalidade, melhoria contínua do backend. Desenvolvimento de soluções focadas em microserviços"
+          ]
+        },
         "achivment": {
           "title": "Principais realizações",
-          "descriptions": [
+          "list": [
             "Generalizar tratemento de erro a nível de aplicação",
             "Criação de página de administração para gerenciar recursos que antes eram geridos via hard code",
             "Implementação de mensageria para envio de notificações push"
@@ -39,21 +36,18 @@
         "subtitle": "MJV Innovation and Technology",
         "period": "04/2018 à 02/2020",
         "fullPeriod": "1 ano e 10 meses",
-        "projects": [
-          {
-            "title": "Projeto PCBS-Novamed",
-            "descriptions": [
-              "Melhoria de código implementado por outra consultoria",
-              "Implementação de novo fluxo de agendamento para clientes do plano de saude",
-              "Levantamento de requisitos com o cliente",
-              "Planejamento das sprints"
-              ],
-            "stacks": "Java 11, Spring Boot, JPA, PostgreSQL, AWS, Gradle, Maven, Redis, RabbitMQ."
-          }
-        ],
+        "responsabilities": {
+          "title": "Responsabilidades",
+          "list": [
+            "Melhoria de código implementado por outra consultoria",
+            "Implementação de novo fluxo de agendamento para clientes do plano de saude",
+            "Levantamento de requisitos com o cliente",
+            "Planejamento das sprints"
+            ]
+        },
         "achivment": {
           "title": "Principais realizações",
-          "descriptions": [
+          "list": [
             "Generalizar tratemento de erro a nível de aplicação",
             "Criação de página de administração para gerenciar recursos que antes eram geridos via hard code",
             "Implementação de mensageria para envio de notificações push"
@@ -64,11 +58,26 @@
   },
   "personalData": {
     "title": "Dados Pessoais",
-    "address": "Gamboa, RJ 20220-470",
-    "dob": "29/07/1987",
-    "celphone": "(21) xxx.xxx.371",
-    "email": "bruno.affonso@live.com",
-    "linkedIn": "https://www.linkedin.com/in/brunodiorio/"
+    "address": {
+      "title": "Endereço",
+      "value": "Gamboa, RJ 20220-470"
+    },
+    "dob": {
+      "title": "Nascimento",
+      "value": "29/07/1987"
+    },
+    "email": {
+      "title": "E-mail",
+      "value": "bruno.affonso@live.com"
+    },
+    "linkedIn": {
+      "title": "LinkedIn",
+      "value": "linkedin.com/in/brunodiorio"
+    },
+    "github": {
+      "title": "Github",
+      "value": "github.com/DiorioBruno"
+    }
   },
   "formation":{
     "title": "Formação",
@@ -98,11 +107,23 @@
   "skills": [
     {
       "title": "Linguagens",
-      "items": ["Java", "JavaScript"]
+      "list": ["Java", "JavaScript", "Typescript", "Python", "Sql", "HTML", "CSS"]
     },
     {
       "title": "Frameworks",
-      "items": ["jQuery", "Spring", "JPA"]
+      "list": ["Spring", "JPA", "jUnit", "Mockito", "JSF", "JSP", "Struts", "Maven"]
+    },
+    {
+      "title": "Ops",
+      "list": ["Aws", "Jenkins", "Tomcat", "Jboss", "Websphere", "Liberty", "PostgreSQL", "MySql", "Redis", "Oracle", "Sql Server", "DB2"]
+    },
+    {
+      "title": "Versionamento",
+      "list": ["Git", "Svn"]
+    },
+    {
+      "title": "Gestão",
+      "list": ["Redmine", "Asana", "Trello", "Wrike", "Kanban", "Scrum"]
     }
   ]
 }

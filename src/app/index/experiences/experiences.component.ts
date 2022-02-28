@@ -11,48 +11,68 @@ export class ExperiencesComponent implements OnInit {
   @Input() experiences: Experience = <Experience>{};
   @Input() language: string = '';
 
+  curDate:   Date = new Date();
+
   readonly labels: any =
   {
-    "pt": ["anos", "ano", "meses", "mes"],
-    "en": ["years", "year", "months", "month"]
+    "pt": ["anos", "ano", "e", "meses", "mes"],
+    "en": ["years", "year", "and", "months", "month"]
   };
-
-  beginDate: Date = new Date('2020-03-01');
-  curDate:   Date = new Date();
-  diffDate:  Date = this.initDiffDate();
-  formatedDiffDate: string = '';
 
   constructor() {}
 
   ngOnInit(): void {
-    this.formatedDiffDate = this.calcCurrentJobTime();
+
+    this.experiences.data.forEach(experience => {
+      experience.currentJobStartDate = this.calcCurrentJobTime(experience.currentJobStartDate);
+    });
   }
 
-  initDiffDate(): Date {
-    return new Date(this.curDate.getTime() - this.beginDate.getTime());
+  initDiffDate(beginDate: Date): Date {
+    return new Date(this.curDate.getTime() - beginDate.getTime());
   }
 
-  dateDiffYears(): number {
-    return this.diffDate.getUTCFullYear() - 1970;
+  dateDiffYears(diffDate: Date): number {
+    return diffDate.getUTCFullYear() - 1970;
   }
 
-  dateDiffMonths(): number {
-    return this.diffDate.getUTCMonth();
+  dateDiffMonths(diffDate: Date): number {
+    return diffDate.getUTCMonth();
   }
 
-  calcCurrentJobTime(): string {
+  calcCurrentJobTime(beginDateStr: string): string {
+
+    let beginDate: Date = new Date(beginDateStr);
+    let diffDate:  Date = this.initDiffDate(beginDate);
+
     let key = this.language;
-    console.log(this.labels[key]);
+    let label = this.labels[key];
 
-    let months = this.dateDiffMonths();
-    let years  = this.dateDiffYears();
+    let months = this.dateDiffMonths(diffDate);
+    let years  = this.dateDiffYears(diffDate);
     let retVal = '';
 
-    retVal += years;
-    retVal += (years > 1) ? ' anos' : ' ano';
-    retVal += (years > 0 && months > 0) ? ' e ' : '';
-    retVal += months;
-    retVal += (months > 1) ? ' meses' : ' mês';
+
+    if (years > 1) {
+      retVal += years;
+      retVal += ' ' + label[0];
+
+    } else if (years > 0) {
+      retVal += years;
+      retVal += ' ' + label[1];
+    }
+
+    retVal += (years > 0 && months > 0) ? ' ' + label[2] + ' ' : '';
+
+    if (months > 1) {
+      retVal += months;
+      retVal += ' ' + label[3];
+
+    } else if (months > 0) {
+      retVal += months;
+      retVal += ' ' + label[4];
+    }
+
     return retVal;
   }
 

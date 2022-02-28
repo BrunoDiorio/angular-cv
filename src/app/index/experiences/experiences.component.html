@@ -3,22 +3,22 @@
   <div class="row">
     <div class="col-12 mt-3">
       <h4>{{ experiences.title }}</h4>
-      <mat-divider></mat-divider>
+      <hr />
     </div>
   </div>
 
-  <div *ngFor="let experience of experiences.data; index as i" class="row mb-5">
+  <div *ngFor="let experience of experiences.data" class="row mb-5">
     <div class="col-2">
       {{ experience.period }}
       <div class="font-italic">
-        <div *ngIf="i == 0; else elseBlock">
-          ({{ formatedDiffDate }})
+        <div *ngIf="experience.currentJobStartDate; else elseBlock">
+          ({{ experience.currentJobStartDate }})
         </div>
         <ng-template ng-template #elseBlock>({{ experience.fullPeriod }})</ng-template></div>
     </div>
     <div class="col-10">
       <div class="row">
-        <div class="col-12 fw-bolder lead">
+        <div class="col-12 fw-bold lead">
           {{ experience.title }}
         </div>
         <div class="col-12 fst-italic">
@@ -27,19 +27,19 @@
 
         <div class="col-12 pt-2" *ngIf="experience.responsabilities as responsabilities">
 
-          <h6>{{ responsabilities.title }}</h6>
+          <h6 class="fw-bold">{{ responsabilities.title }}</h6>
           <ul class="list-group">
-            <li class="list-group-item border-0 text-justify">
-              <div *ngFor="let responsability of responsabilities.list">{{ responsability }}</div>
+            <li class="list-group-item border-0 tx-justify" *ngFor="let responsability of responsabilities.list">
+              {{ responsability }}
             </li>
           </ul>
         </div>
 
         <div class="col-12 pt-2">
           <div *ngIf="experience.achivment as achivment">
-            <h6>{{ achivment.title }}:</h6>
+            <h6 class="fw-bold">{{ achivment.title }}</h6>
             <ul class="list-group">
-              <li class="list-group-item border-0 text-justify" *ngFor="let achivment of achivment.list">
+              <li class="list-group-item border-0 tx-justify" *ngFor="let achivment of achivment.list">
                 {{ achivment }}
               </li>
             </ul>

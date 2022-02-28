@@ -22,17 +22,19 @@ export interface ExperienceData {
   subtitle: string;
   period: string;
   fullPeriod: string;
+  currentJobStartDate: string;
   responsabilities: Section;
   achivment: Section;
 }
 
 export interface PersonalData {
   title: string;
-  address: string;
-  dob: string;
-  celphone: string;
-  email: string;
-  linkedIn: string;
+  address: Section;
+  dob: Section;
+  cellphone: Section;
+  email: Section;
+  linkedIn: Section;
+  github: Section;
 }
 
 export interface Formation {
@@ -50,4 +52,5 @@ export interface Section {
   title: string;
   subtitle: string;
   list: string[];
+  value: string;
 }
