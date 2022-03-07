@@ -24,7 +24,7 @@ export interface ExperienceData {
   fullPeriod: string;
   currentJobStartDate: string;
   responsabilities: Section;
-  achivment: Section;
+  achievement: Section;
 }
 
 export interface PersonalData {

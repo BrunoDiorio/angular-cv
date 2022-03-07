@@ -16,16 +16,16 @@
           "title": "Responsabilidades",
           "list": [
             "Analisar e definir alterações visando definições da sprint",
-            "Realizar alterações técnicas relevantes a especificações",
+            "Realizar alterações técnicas relevantes à especificações",
             "Planejamento e desenvolvimento de testes para garantir que as alterações de código atendam aos requisitos e especificações",
             "Realizar o deploy e acompanhar os impactos pós-implementação das alterações realizadas",
             "Implementação de novas funcionalidade, melhoria contínua do backend. Desenvolvimento de soluções focadas em microserviços"
           ]
         },
-        "achivment": {
+        "achievement": {
           "title": "Principais realizações",
           "list": [
-            "Generalizar tratemento de erro a nível de aplicação",
+            "Generalizar tratamento de erro a nível de aplicação",
             "Criação de página de administração para gerenciar recursos que antes eram geridos via hard code",
             "Implementação de mensageria para envio de notificações push"
           ]
@@ -43,12 +43,12 @@
             "Implementação de novo fluxo de agendamento para clientes do plano de saude",
             "Levantamento de requisitos com o cliente",
             "Planejamento das sprints"
-            ]
+          ]
         },
-        "achivment": {
+        "achievement": {
           "title": "Principais realizações",
           "list": [
-            "Generalizar tratemento de erro a nível de aplicação",
+            "Generalizar tratamento de erro a nível de aplicação",
             "Criação de página de administração para gerenciar recursos que antes eram geridos via hard code",
             "Implementação de mensageria para envio de notificações push"
           ]

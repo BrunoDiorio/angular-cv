@@ -36,11 +36,11 @@
         </div>
 
         <div class="col-12 pt-2">
-          <div *ngIf="experience.achivment as achivment">
-            <h6 class="fw-bold">{{ achivment.title }}</h6>
+          <div *ngIf="experience.achievement as achievement">
+            <h6 class="fw-bold">{{ achievement.title }}</h6>
             <ul class="list-group">
-              <li class="list-group-item border-0 tx-justify" *ngFor="let achivment of achivment.list">
-                {{ achivment }}
+              <li class="list-group-item border-0 tx-justify" *ngFor="let achievement of achievement.list">
+                {{ achievement }}
               </li>
             </ul>
           </div>
