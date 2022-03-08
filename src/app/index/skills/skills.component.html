@@ -1,13 +1,11 @@
-<section>
-  <div *ngFor="let skill of skills">
-    <div class="row">
-      <div class="col-12 mt-3">
+<section >
+  <div class="row mb-4" *ngFor="let skill of skills">
+      <div class="col-12">
         <h4>{{ skill.title }}</h4>
         <hr />
       </div>
-      <div class="row justify-content-start mb-2">
-        <div class="col-6" *ngFor="let item of skill.list">{{ item }}</div>
+      <div *ngFor="let item of skill.list" class="col-6 justify-content-start">
+        {{ item }}
       </div>
-    </div>
   </div>
 </section>
