@@ -1,22 +1,15 @@
 
-<section>
-  <div class="row">
-    <div class="col-12 mt-3">
-      <h4>{{ experiences.title }}</h4>
-      <hr />
-    </div>
-  </div>
-
-  <div *ngFor="let experience of experiences.data" class="row mb-5">
-    <div class="col-2">
+<section class="mb-4">
+  <h4>{{ experiences.title }}</h4>
+  <hr />
+  <div *ngFor="let experience of experiences.data" class="row mb-3">
+    <div class="col-3 d-none d-md-block">
       {{ experience.period }}
-      <div class="font-italic">
-        <div *ngIf="experience.currentJobStartDate; else elseBlock">
-          ({{ experience.currentJobStartDate }})
+        <div class="font-italic">
+          ({{ experience.currentJobStartDate || experience.fullPeriod }})
         </div>
-        <ng-template ng-template #elseBlock>({{ experience.fullPeriod }})</ng-template></div>
     </div>
-    <div class="col-10">
+    <div class="col-12 col-md-9">
       <div class="row">
         <div class="col-12 fw-bold lead">
           {{ experience.title }}
@@ -25,11 +18,18 @@
           {{ experience.subtitle }}
         </div>
 
+        <div class="col-12 my-2 d-sm-block d-md-none">
+          {{ experience.period }}
+            <div class="font-italic">
+              ({{ experience.currentJobStartDate || experience.fullPeriod }})
+            </div>
+        </div>
+
         <div class="col-12 pt-2" *ngIf="experience.responsabilities as responsabilities">
 
           <h6 class="fw-bold">{{ responsabilities.title }}</h6>
-          <ul class="list-group">
-            <li class="list-group-item border-0 tx-justify" *ngFor="let responsability of responsabilities.list">
+          <ul>
+            <li class="tx-justify" *ngFor="let responsability of responsabilities.list">
               {{ responsability }}
             </li>
           </ul>
@@ -38,8 +38,8 @@
         <div class="col-12 pt-2">
           <div *ngIf="experience.achievement as achievement">
             <h6 class="fw-bold">{{ achievement.title }}</h6>
-            <ul class="list-group">
-              <li class="list-group-item border-0 tx-justify" *ngFor="let achievement of achievement.list">
+            <ul>
+              <li class="tx-justify" *ngFor="let achievement of achievement.list">
                 {{ achievement }}
               </li>
             </ul>
