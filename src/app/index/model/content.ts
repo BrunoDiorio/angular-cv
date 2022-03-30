@@ -37,6 +37,16 @@ export interface PersonalData {
   github: Section;
 }
 
+export enum PersonalDataIcons {
+  address = 'home',
+  dob = 'cake',
+  cellphone = 'phone',
+  email = 'alternate_email',
+  github = 'travel_explore',
+  linkedIn = 'work_outline',
+  title = '', //required to avoid type-checking error in template --> GAMBIARRA
+}
+
 export interface Formation {
   title: string;
   data: FormationData[];

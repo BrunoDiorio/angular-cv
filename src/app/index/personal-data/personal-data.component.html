@@ -1,46 +1,26 @@
-<section>
-  <div class="row">
-    <div class="col-12 mt-3">
+<section class="row mb-3">
+    <div class="col-12">
       <h4>{{ personalData.title }}</h4>
       <hr />
     </div>
-  </div>
-  <div class="row mb-2">
-    <div class="col-4">
-      {{ personalData?.address?.title }}
-    </div>
-    <div class="col-8 text-break">
-      {{ personalData?.address?.value }}
-    </div>
-    <div class="col-4">
-      {{ personalData?.dob?.title }}
-    </div>
-    <div class="col-8 text-break">
-      {{ personalData?.dob?.value }}
-    </div>
-    <div class="col-4">
-      {{ personalData?.cellphone?.title }}
-    </div>
-    <div class="col-8 text-break">
-      {{ personalData?.cellphone?.value }}
-    </div>
-    <div class="col-4">
-      {{ personalData?.email?.title }}
-    </div>
-    <div class="col-8 text-break">
-      {{ personalData?.email?.value }}
-    </div>
-    <div class="col-4">
-      {{ personalData?.linkedIn?.title }}
-    </div>
-    <div class="col-8 text-break">
-      {{ personalData?.linkedIn?.value }}
-    </div>
-    <div class="col-4">
-      {{ personalData?.github?.title }}
-    </div>
-    <div class="col-8 text-break">
-      {{ personalData?.github?.value }}
-    </div>
-  </div>
+  <ng-container *ngFor="let info of personalData | keyvalue">
+      <div class="col-12 mb-2" *ngIf="isSection(info.value)">
+        <small>
+         {{  info.value.title }}
+        </small>
+        <div class="d-flex align-items-center">
+          <div class="material-icons-outlined">
+            {{ icons[info.key] }}
+          </div>
+          <div class="mx-2" >
+            <a *ngIf="info.value.value.match('\.com/'); else notUrl" target="_blank" [href]="'https://'+info.value.value">
+              {{info.value.value}}
+            </a>
+            <ng-template #notUrl>
+              {{info.value.value}}
+            </ng-template>
+          </div>
+        </div>
+      </div>
+  </ng-container>
 </section>
