@@ -48,9 +48,30 @@
         "achivment": {
           "title": "Principais realizações",
           "list": [
-            "Generalizar tratemento de erro a nível de aplicação",
-            "Criação de página de administração para gerenciar recursos que antes eram geridos via hard code",
-            "Implementação de mensageria para envio de notificações push"
+            "Implementação de nosos servidores de desenvolvimento liberty para agilidade da equipe de desenvolvimento",
+            "Criação de projeto base para novas contrataçõe com clientes"
+          ]
+        }
+      },
+      {
+        "title": "Desenvolvedor Java Pleno",
+        "subtitle": "Datagrupo system solutions",
+        "period": "04/2017 à 04/2018",
+        "fullPeriod": "1 ano",
+        "responsabilities": {
+          "title": "Responsabilidades",
+          "list": [
+            "Melhoria de código implementado por outra consultoria",
+            "Implementação de novo fluxo de agendamento para clientes do plano de saude",
+            "Levantamento de requisitos com o cliente",
+            "Planejamento das sprints"
+            ]
+        },
+        "achivment": {
+          "title": "Principais realizações",
+          "list": [
+            "Implementação de servidores de desenvolvimento liberty para agilidade da equipe de desenvolvimento",
+            "Criação de projeto base para novas contrataçõe com clientes"
           ]
         }
       }

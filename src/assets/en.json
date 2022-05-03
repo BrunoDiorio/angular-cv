@@ -3,67 +3,67 @@
     "title": "Bruno Diorio Andrade Affonso",
     "subtitle": "Java Developer"
   },
-  "description": "Profissional atuando na área de TI a mais de <b>10 anos</b> com experiência nos campos de infraestrutura, redes e desenvolvimento. Apto a atuar no <b>desenvolvimento de projetos</b> contribuindo com as diretrizes de arquitetura, levantamento de requisitos, implementação e desenvolvimento das soluções adequadas às necessidades do projeto.",
+  "description":"I am an IT profissional with an experience of over <b>10 years</b> in the areas of infrastructure, networks and development. Capable of working in <b>project development</b> by contributing to the architectural guidelines, identifying requirements, implementing and developing solutions that are suited for the project's necessities.",
   "experiences": {
-    "title": "Experiência",
+    "title": "Experience",
     "data": [
       {
-        "title": "Desenvolvedor Java Senior",
-        "subtitle": "RecargaPay Instituição de Pagamentos LTDA",
-        "period": "03/2020 à Presente Data",
+        "title": "Senior Java Developer",
+        "subtitle": "RecargaPay Payment Institution LTDA",
+        "period": "March/2020 - Present Day",
         "currentJobStartDate": "2020-03-01",
         "responsabilities": {
-          "title": "Responsabilidades",
+          "title": "Responsabilities",
           "list": [
-            "Analisar e definir alterações visando definições da sprint",
-            "Realizar alterações técnicas relevantes a especificações",
-            "Planejamento e desenvolvimento de testes para garantir que as alterações de código atendam aos requisitos e especificações",
-            "Realizar o deploy e acompanhar os impactos pós-implementação das alterações realizadas",
-            "Implementação de novas funcionalidade, melhoria contínua do backend. Desenvolvimento de soluções focadas em microserviços"
+            "Analize and implement alterations considering Sprint definitions",
+            "Implement technical alterations that are relevant to the specifications",
+            "Planning and development of tests to ensure that the code's alterations meet the requirements and specifications",
+            "Deploy the alterations and monitor the impacts after implementing the alterations to the product",
+            "Implementation of new functionalities, continuous improvement to the backend. Development of solutions focused on microservices"
           ]
         },
         "achivment": {
-          "title": "Principais realizações",
+          "title": "Professional Achievements",
           "list": [
-            "Generalizar tratemento de erro a nível de aplicação",
-            "Criação de página de administração para gerenciar recursos que antes eram geridos via hard code",
-            "Implementação de mensageria para envio de notificações push"
+            "Generalize error treatment at an application level",
+            "Development of an Admin page to manage resources that were previously managed via hard code.",
+            "Implementation of a message delivery platform for sending push notifications"
           ]
         }
       },
       {
-        "title": "Desenvolvedor Java Pleno",
+        "title": "Java Developer",
         "subtitle": "MJV Innovation and Technology",
-        "period": "04/2018 à 02/2020",
-        "fullPeriod": "1 ano e 10 meses",
+        "period": "April/2018 à February/2020",
+        "fullPeriod": "1 year e 10 months",
         "responsabilities": {
-          "title": "Responsabilidades",
+          "title": "Responsabilities",
           "list": [
-            "Melhoria de código implementado por outra consultoria",
-            "Implementação de novo fluxo de agendamento para clientes do plano de saude",
-            "Levantamento de requisitos com o cliente",
-            "Planejamento das sprints"
+            "Improvement to the code that was implemented by a third party",
+            "Implementation of a new scheduling flux for health insurance costumers",
+            "Gathering information on the client's needs",
+            "Interaction with the customer's technical team",
+            "Sprints planning"
             ]
         },
         "achivment": {
-          "title": "Principais realizações",
+          "title": "Main Achievements",
           "list": [
-            "Generalizar tratemento de erro a nível de aplicação",
-            "Criação de página de administração para gerenciar recursos que antes eram geridos via hard code",
-            "Implementação de mensageria para envio de notificações push"
+            "Implementation of liberty development servers rising the team agility",
+            "Created a Spring code base for new projects having all dependencies used by client"
           ]
         }
       }
     ]
   },
   "personalData": {
-    "title": "Dados Pessoais",
+    "title": "Personal Info",
     "address": {
-      "title": "Endereço",
+      "title": "Address",
       "value": "Gamboa, RJ 20220-470"
     },
     "dob": {
-      "title": "Nascimento",
+      "title": "Date of Birth",
       "value": "29/07/1987"
     },
     "email": {
@@ -80,16 +80,16 @@
     }
   },
   "formation":{
-    "title": "Formação",
+    "title": "Education",
     "data": [
       {
         "date":"2004",
-        "description": "Ensino médio",
+        "description": "High School",
         "teachingEntity": "Rede MV1"
       },
       {
         "date":"2013",
-        "description": "Técnico em Informática",
+        "description": "Computer Technician",
         "teachingEntity": "Senai"
       },
       {
@@ -99,14 +99,14 @@
       },
       {
         "date":"2018",
-        "description": "Bacharel em Engenharia da Computação",
+        "description": "Computer Engineeing Degree",
         "teachingEntity": "UVA"
       }
     ]
   },
   "skills": [
     {
-      "title": "Linguagens",
+      "title": "Languages",
       "list": ["Java", "JavaScript", "Typescript", "Python", "Sql", "HTML", "CSS"]
     },
     {
@@ -118,11 +118,11 @@
       "list": ["Aws", "Jenkins", "Tomcat", "Jboss", "Websphere", "Liberty", "PostgreSQL", "MySql", "Redis", "Oracle", "Sql Server", "DB2"]
     },
     {
-      "title": "Versionamento",
+      "title": "Versioning",
       "list": ["Git", "Svn"]
     },
     {
-      "title": "Gestão",
+      "title": "Management",
       "list": ["Redmine", "Asana", "Trello", "Wrike", "Kanban", "Scrum"]
     }
   ]
