@@ -25,7 +25,7 @@
         "achivment": {
           "title": "Professional Achievements",
           "list": [
-            "Generalize error treatment at an application level",
+            "Generalized error treatment at an application level",
             "Development of an Admin page to manage resources that were previously managed via hard code.",
             "Implementation of a message delivery platform for sending push notifications"
           ]
@@ -34,8 +34,8 @@
       {
         "title": "Java Developer",
         "subtitle": "MJV Innovation and Technology",
-        "period": "April/2018 à February/2020",
-        "fullPeriod": "1 year e 10 months",
+        "period": "April/2018 to February/2020",
+        "fullPeriod": "1 year and 10 months",
         "responsabilities": {
           "title": "Responsabilities",
           "list": [
